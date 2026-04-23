@@ -1,0 +1,29 @@
+## Build folders and files
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+## Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+## VS Code
+.vscode/
+
+## Publish and Publish profiles
+*.pubxml
+*.publishproj
+PublishProfiles/
+
+## Environment variables and secrets
+appsettings.Development.json
+appsettings.Production.json
+.env
+
+## OS generated files
+.DS_Store
+Thumbs.db

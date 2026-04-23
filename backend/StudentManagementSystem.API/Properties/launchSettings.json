@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "StudentManagementSystem.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:61506;http://localhost:61507"
+    }
+  }
+}
