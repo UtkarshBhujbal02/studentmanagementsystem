@@ -8,13 +8,22 @@ function getHeaders() {
     };
 }
 
-async function apiGet(path) {
+async function getErrorMessage(res) {
+    try {
+        const body = await res.json();
+        return body.message || `Error: ${res.status}`;
+    } catch {
+        return `Error: ${res.status}`;
+    }
+}
+
+export async function apiGet(path) {
     const res = await fetch(`${BASE_URL}${path}`, { headers: getHeaders() });
     if (!res.ok) throw new Error(await getErrorMessage(res));
     return res.json();
 }
 
-async function apiPost(path, body) {
+export async function apiPost(path, body) {
     const res = await fetch(`${BASE_URL}${path}`, {
         method: 'POST',
         headers: getHeaders(),
@@ -24,7 +33,7 @@ async function apiPost(path, body) {
     return res.json();
 }
 
-async function apiPut(path, body) {
+export async function apiPut(path, body) {
     const res = await fetch(`${BASE_URL}${path}`, {
         method: 'PUT',
         headers: getHeaders(),
@@ -34,20 +43,11 @@ async function apiPut(path, body) {
     return res.json();
 }
 
-async function apiDelete(path) {
+export async function apiDelete(path) {
     const res = await fetch(`${BASE_URL}${path}`, {
         method: 'DELETE',
         headers: getHeaders()
     });
     if (!res.ok) throw new Error(await getErrorMessage(res));
     return res.json();
-}
-
-async function getErrorMessage(res) {
-    try {
-        const body = await res.json();
-        return body.message || `Error: ${res.status}`;
-    } catch {
-        return `Error: ${res.status}`;
-    }
 }

@@ -48,7 +48,8 @@ body {
     font-weight: 500;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     border: 1px solid #E6E6E6;
     border-radius: 6px;
@@ -57,7 +58,8 @@ input, select {
     font-family: 'Inter', sans-serif;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     border-color: #111111;
     outline: none;
 }
@@ -89,8 +91,11 @@ input:focus, select:focus {
 
 .modal-overlay {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
     display: none;
     justify-content: center;
     align-items: center;
@@ -146,8 +151,13 @@ header {
 }
 
 @keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
 }
 
 /* Helpers */
@@ -157,15 +167,56 @@ header {
     margin-top: 4px;
     display: none;
 }
-.flex { display: flex; }
-.justify-between { justify-content: space-between; }
-.items-center { align-items: center; }
-.gap-2 { gap: 8px; }
-.gap-4 { gap: 16px; }
-.mt-4 { margin-top: 16px; }
-.mt-2 { margin-top: 8px; }
-.mb-4 { margin-bottom: 16px; }
-.main-content { padding: 32px; max-width: 1200px; margin: 0 auto; }
-.form-group { margin-bottom: 16px; }
-.form-group label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 4px; }
-.text-right { text-align: right; }
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-2 {
+    gap: 8px;
+}
+
+.gap-4 {
+    gap: 16px;
+}
+
+.mt-4 {
+    margin-top: 16px;
+}
+
+.mt-2 {
+    margin-top: 8px;
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+}
+
+.main-content {
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.text-right {
+    text-align: right;
+}
