@@ -15,7 +15,6 @@ To quickly review the project, you can use the following pre-configured admin ac
 
 ## 🌟 Key Features
 
-- **Modern Aesthetic:** Clean, "Tally.so" inspired light theme with beautiful decorative assets.
 - **Full CRUD Operations:** Add, Edit, Delete, and View student records.
 - **Real-time Search:** Instantly filter students by name or email.
 - **Secure Authentication:** JWT-based login system.
